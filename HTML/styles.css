@@ -60,12 +60,16 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 85px;
     display: flex;
     background: linear-gradient(#03176a, #000);
     justify-content: space-between;
+
+    z-index: 3;
     z-index: 1;
+
 }
+
 
 header .logo {
     display: flex;
@@ -169,11 +173,12 @@ label {
 }
 
 figure {
+    margin-top: 37.2px;
     margin-top: 80.4px;
     position: relative;
     left: 0;
     width: 400%;
-    animation: 15.5s slide infinite;
+    animation: 20s slide infinite;
 }
 .slide {
     position: relative;
@@ -186,69 +191,66 @@ figure {
     font-size: 3em;
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 2px rgb(246, 55, 55), 0 0 1em rgb(79, 79, 226), 0 0 0.2em rgb(34, 34, 167);
 }
 
 .slide img {
+    border-radius: 0;
+    padding: 0 ;
     width: 100%;
     height: 500px;
 
 }
 @keyframes slide {
-    0%{
-        left: 0;
+    0% {
+        left: 0%;
     }
-    10% {
-        left: 0;
-    }
+
     20% {
+        left: 0%;
+    }
+
+    25% {
         left: -100%;
     }
-    30% {
+
+    45% {
         left: -100%;
     }
-    40% {
-        left: -200%;
-    }
+
     50% {
         left: -200%;
     }
-    55% {
-        left: -300%;
-    }
-    65% {
-        left: -300%;
-    }
-    66% {
+
+    70% {
         left: -200%;
     }
-    74% {
-        left: -200%;
-    }
+
     75% {
-        left: -100%;
+        left: -300%;
     }
-    85% {
-        left: -100%;
+
+    95% {
+        left: -300%;
     }
-    90% {
-        left: 0;
-    }
+
     1000% {
-        left: 0;
+        left: -400%;
     }
 }
+
+/* ESTO ES UNA PRUEBA DE TARGETAS DE COMPRAS*/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 /*-- VARIABLES CSS--*/
 /*Colores*/
 :root {
-    --first-color: #E3F8FF;
-    --second-color: #DCFAFB;
-    --third-color: #FFE8DF;
+    --first-color: #07269fd3;
+    --second-color: #07269fd3;
+    --third-color: #07269fd3;
     --accent-color: #FF5151;
     --dark-color: #161616;
 }
@@ -286,6 +288,7 @@ body {
 
 h1 {
     font-size: var(--h1-font-size);
+    text-shadow: 1px 1px 2px rgb(246, 55, 55), 0 0 1em rgb(79, 79, 226), 0 0 0.2em rgb(34, 34, 167);
 }
 
 img {
@@ -444,3 +447,5 @@ article:nth-child(4) {
         margin-right: auto;
     }
 }
+
+
