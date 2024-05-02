@@ -5,20 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 body {
     background-color: #ffffff;
     font-family: sans-serif;
 }
 
-h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: sans-serif, Arial, Helvetica;
-    font-weight: 700;
-    margin-top: 150px;
-}
+
 
 h2 {
     text-align: center;
@@ -27,7 +19,7 @@ h2 {
     color: #000000;
 }
 
-ul {
+ul .navbar{
     text-align: justify;
     list-style-type: none;
     line-height: 0px;
@@ -42,14 +34,15 @@ ul {
 
 .nav__item {
     display: inline-block;
+    font-size: 20px;
 }
 
-a:hover {
+.nav__item>:hover  {
     color:aqua
 }
 
 .barra_de_navegacion li {
-    margin: 20px;
+    margin: 5px 15px;
     text-align: justify;
     padding: 20px 20px;
 }
@@ -63,7 +56,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 85px;
+    height: 73px;
     display: flex;
     background: linear-gradient(#040f3c, #04246f);
     justify-content: space-between;
@@ -313,6 +306,7 @@ a {
     margin: 0 2.5rem;
 }
 
+/*  LINEA FEA AL LADO DE LA PALABRA
 .title-shop::after {
     content: '';
     position: absolute;
@@ -322,7 +316,7 @@ a {
     background-color: var(--dark-color);
     margin-left: .25rem;
 }
-
+*/
 /*-- COMPONENT --*/
 .card {
     position: relative;
@@ -455,48 +449,62 @@ font-size: 18px;
     text-transform: uppercase;
 }
 .btn-1:hover {
-    background-color: #e0ad93 ;
+    background-color: #6872ff ;
 }
 
-.general {
+.blog {
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(#2743f8bd, #ffffff);
+}
+
+.blog-content {
     display: flex;
+    justify-content: space-between
 }
 
-.general-1 {
-    width: 50%;
-    padding: 100px 250px 100px 100px;
-    background-color: #e1e2e6;
-}
-/* ACA */
-.general-2 {
-    background-image: url(/img/img1-descripcion.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
+.blog-1 {
     
-}
-/* mas que nada esta*/
-.general-3 {
-    background-image: url(/img/crea1.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-    
+    padding: 15px 55px;
 }
 
-.stilo-h2 {
+.blog-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3 {
     font-size: 25px;
-    line-height: 70px;
     color: #323337;
-    text-transform: uppercase;
-    margin-bottom: 20px;
 }
 
-p{
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #f9fafc;
+    margin-bottom: 15px;
+
+}
+
+.link a {
     font-size: 16px;
-    color: #414247;
-    margin: 25px 0 45px 0;
+    color:#c5c5c5;
+    display: block;
+    margin-bottom: 15px;
 
 }
